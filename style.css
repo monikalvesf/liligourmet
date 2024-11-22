@@ -1,0 +1,558 @@
+html, body {
+  font-family: "Playball", cursive;
+  background-color: white;
+  font-weight: 700;
+}
+
+h1{
+  font-family: "Alata", sans-serif;
+  background-color: rgba(43,228,165,0.12);
+  display: flex;
+  color: white;
+  font-weight: 400;
+  font-size: 35px;
+}
+  
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.container img{
+height: 100px;
+  padding: 15px;
+}
+
+.topo{
+  background-color: rgba(43,228,165,0.58);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px;
+}
+
+.menuimg{
+  padding: 1em;
+
+}
+
+.menu{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background-image: url("menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.listamenu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+background-color: white;
+box-shadow: 0 2px 5px gray;
+  border-radius: 0 0 20px 20px;
+  font-size: 30px;
+}
+
+.abrirmenu:checked ~ .listamenu{
+  display: block;
+}
+
+.menulink{
+  text-decoration: none;
+  color: black;
+}
+
+input[type="checkbox"]{
+  display: none;
+  
+}
+
+.menuitem{
+  padding: 10px;
+}
+
+.listamenu .menuitem:hover{
+  background-col: pink;
+}
+
+.menulink:hover{
+  color: rgb(43,228,165);
+  font-weight: 1000;
+}
+
+.inicio{
+  background: #FF94B8;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 2.5em 2em;
+  margin-bottom: 1em;
+  box-shadow: 5px 4px 4px gray;
+}
+
+.iniciotitulo{
+  padding-bottom: 30px;
+}
+
+.iniciotexto{
+  margin: 1em 0;
+  margin-bottom: 1em;
+}
+
+.pesquisa{
+  background-color: transparent;
+  border: 1px solid white;
+  color: gray;
+  font-family: "Playball", cursive;
+  border-radius: 24px;
+  padding: 2em;
+  width: 70%;
+  font-weight: 700;
+  text-align: center;
+  color: silver;
+}
+
+.pesquisa::placeholder{
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+}
+
+.titulos{
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  background-color: rgba(43,228,165,0.43);
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 50px;
+  box-shadow: 5px 4px 4px gray;
+}
+
+.swiper-wrapper{
+  padding-top: 20px;
+}
+
+.swiper-slide img{
+  width: 100%;
+  box-shadow: 5px 4px 4px gray;
+  opacity: 0.8;
+}
+
+.swiper-slide img:hover{
+  opacity: 1.0;
+  border: 3px solid pink;
+}
+ 
+.swiper{
+  margin: 50px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: pink;
+}
+
+.swiper-pagination-bullet, .swiper-pagination-bullet-active{
+   background-color: pink;
+}
+
+.swiper-button-prhover, .swiper-button-next:hover{
+  color: #E93B76;
+}
+
+.indicacoes{
+  background: white;
+  flex-direction: row;
+  box-shadow: 0px 4px 4px gray;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 1em 1em 1em 3em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.descricao{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.descricaotitulo{
+  color: pink;
+  font-weight: 700;
+  display: flex;
+  font-size: 60px;
+}
+
+.descricaolivro{
+  color: silver;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0.5em 0;
+  display: flex;
+  padding-right: 50px;
+}
+
+.descricaotexto{
+  font-size: 30px;
+  display: flex;
+  padding-right: 100px;
+  text-align: justify;
+  width: 100%;
+}
+
+.descricaoimg{
+  height: 300px;
+  width: auto;
+  margin-bottom: 70px;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 10px 10px rgba(0,0,0,0.25);
+}
+
+.botoes img{
+  width: 30px;
+  height: 30px;
+}
+
+.botoes{
+  display: flex;
+}
+
+.itembotoes{
+  margin: 0 0.5em;
+  margin-top: 40px;
+}
+
+.saibamais{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.botao{
+  background-color:pink;
+  padding: 1em 2.2em;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  border-radius: 200px;
+  box-shadow: 0px 4px 4px  rgba(0,0,0,0.25);
+  max-width: 100px;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.botao:hover{
+  background-color: #E7497F;
+  font-size: 28px;
+  
+}
+
+.menor{
+  width: 200px;
+  height: auto;
+  
+}
+
+.topicos{
+  background: pink;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.topicostitulos{
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+    margin-bottom: 1em;
+}
+
+.topicoslista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topicositem{
+  margin: 2em 1em;
+}
+
+.topicoslink{
+  color: white;
+  text-decoration: none;
+  background-color: rgba(43,228,165,0.83);
+  padding: 1em;
+  border-radius: 200px;
+  font-size: 25px;
+}
+
+.topicoslink:hover{
+  background-color: rgb(252,106,131);
+  font-weight: 800;
+  font-size: 27px;
+  box-shadow: 0px 6px 6px grey;
+}
+
+.contato{
+  background-color: white;
+  padding: 3em;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.contatotitulo{
+  font-size: 50px;
+  color: pink;
+  font-weight: 700;
+}
+
+.contatotexto{
+  font-weight: 800;
+  font-size: 35px;
+ color: black;
+  margin: 1em 0;
+}
+
+.contatoemail{
+  background-color: transparent;
+  border: 1px solid pink;
+  color:silver;
+  border-radius: 100px;
+  padding: 2em;
+  width: 50%;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Playball", cursive;
+}
+
+.contatoemail::placeholder{
+  color: pink;
+  background: url("cartinha.g") no-repeat 5%;
+background-size: 35px;
+ opacity: 0.7;
+  width: 60%;
+}
+
+.contato input{
+  padding: 0.5em;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 30px;
+}
+
+.rodape{
+  background-color: white;
+  padding: 1em;
+}
+
+.rodapetitulo{
+    width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  background-color: rgba(43,228,165,0.43);
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 50px;
+  box-shadow: 5px 4px 4px gray;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.listarodape{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 10px;
+}
+
+.rodapeitem{
+  display: flex;
+  align-items: center;
+}
+
+.rodapeitem img{
+  width: 40px;
+  height: 40px;
+  border-radius:100px;
+  box-shadow: 5px 4px 4px rgb(153,22,122);
+}
+
+.rodapelink{
+  color: black;
+  text-decoration: none;
+  margin-left: 0.6em;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px){
+  .opcoes{
+    display: flex;
+    padding-left: 5em;
+    gap: 2em;
+  }
+  
+  .opcoesitem, .opcoeslink:hover{
+    border-radius: 100px;
+  }
+  
+   .opcoesitem:hover, .opcoeslink:hover{
+    background-color: white;
+    border-radius: 100px;
+    font-weight: 1000;
+    color: black;
+  }
+  .menuimg{
+    display: none;
+  }
+  .opcoesitem{
+    padding: 0.5em;
+    text-transform: uppercase;
+    text-shadow: 5px 4px 4px silver;
+    font-size: 30px;
+   
+  }
+  
+  .opcoeslink{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+  }
+  
+  .opcoesbotao:checked ~ .listamenu{
+    display: block;
+    position: absolute;
+    width: auto;
+    
+  }
+  .listamenu{
+    display: none;
+    position: absolute;
+     left: 35%;
+       top: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    z-index: 1000;
+    border-radius: 0 0 20px 20px gray;
+    
+  }
+.pc{
+  display: none;
+}
+}
+
+@media (max-width: 799px){
+  .container img{
+    width: 30px;
+    height: 30px;
+    padding: 0.5em;
+  }
+  header, body{
+    max-width: 100%;
+  }
+  h1{
+    font-size: 40px;
+  }
+  .menu{
+    transform: scale(0.8);
+  }
+  .listamenu{
+    font-size: 15px;
+  }
+  .pesquisa::placeholder, .contatoemail::placeholder{
+    font-size: 13px;
+  }
+  .titulos{
+    font-size: 20px;
+    width: 80%;
+  }
+  .descricao,.descricaotexto,.descricaolivro,.descricaotitulo,.topicoslink, .iniciotexto{
+    font-size: 20px;
+  }
+  .iniciotitulo{
+    font-size: 35px;
+  }
+  .indicacoes{
+   padding: 1em; 
+  }
+  .botao{
+    padding: 1em 1em;
+    max-width: 70px;
+  }
+  .contatotitulo, .contatotexto{
+    font-size: 30px;
+    max-width: 90%;
+  }
+  .contatoemail::placeholder{
+    background: auto;
+    background-image: none;
+  }
+  .saibamais{
+    width: auto;
+    padding: 0;
+  }
+  .saibamais img, .autor{
+    width: 130px;
+    height: auto;
+    max-width: 90%;
+    margin-top: 5em;
+  }
+  .botao{
+    width: 50%;
+  }
+  .swiper-slide img{
+    width: 80px;
+    height: auto;
+    gap: 20px;
+  }
+  .topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .topicostitulos{
+    font-size: 25px;
+  }
+  .topicositem{
+    height: 40px;
+    font-size: 14px;
+  }
+  .topicoslink:hover{
+    font-size: 22px;
+  }
+  
+  .listarodape, .rodapelink{
+    display: none;
+  }
+  .rodapetitulo{
+    font-size: 15px;
+    width: 80%;
+  }
+  .opcoes{
+    display: none;
+  }
+}
